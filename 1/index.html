@@ -3,11 +3,29 @@
 <html>
 
 <head>
+    <style>
+        body{
+            background-color: aquamarine;
+        }
+
+        .example-div {
+            background-color: blueviolet;
+        }
+    </style>
     <script src="https://code.jquery.com/jquery-git.js"></script>
     <script>
+        $(document).ready(() => {
+
+            $(#create-div).click(() => ) {
+            let newDiv = $('<div></div>');
+            newDiv.text('This is a jQuery Generated Div');
+            newDiv.addClass('example-div');
+            $('body').append(newDiv);
+            
+        });
+    });
 
         //Check the readme file in this folder for instructions.
-
         //Your Code Goes Here
 
     </script>
@@ -17,7 +35,9 @@
 </head>
 
 <body>
-    <input type="button" value="Click to add new div tag" onclick="createDiv()" />
+    <input type="button"
+     value="Click to add new div tag" 
+     id="create-div()" />
 </body>
 
 </html>
